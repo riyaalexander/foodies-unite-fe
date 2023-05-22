@@ -3,24 +3,26 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import '/Users/riyaalexander/Documents/Pursuit/Mod/foodies-unite-fe/src/Styles/RecipeDetails.css';
 
+
+
 const RecipeDetails = () => {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
+  const API = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
-        const response = await axios.get(`/recipes/${id}`);
+        const response = await axios.get(`${API}/recipes/${id}`);
         setRecipe(response.data);
       } catch (error) {
         console.error(error);
-        console.log('error')
       }
     };
 
     fetchRecipe();
   }, [id]);
-console.log(recipe);
+
   if (!recipe) {
     return <div>Loading...</div>;
   }
