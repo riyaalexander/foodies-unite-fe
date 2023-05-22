@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '/Users/riyaalexander/Documents/Pursuit/Mod/foodies-unite-fe/src/Styles/RecipeCard.css';
+import '../Styles/RecipeCard.css';
 
 const RecipeCard = ({ recipe }) => {
   return (

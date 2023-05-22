@@ -23,7 +23,6 @@ const AddRecipes = () => {
 
     try {
       const response = await axios.post('http://localhost:5500/recipes', formData);
-      console.log('hello');
       console.log(response.data);
       // Reset the form data
       setFormData({
@@ -41,7 +40,8 @@ const AddRecipes = () => {
   };
 
   return (
-    <div>
+    <div className="add-recipes-container">
+    <div className="form-container">
       <h1>Add Recipe</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Title:</label>
@@ -71,6 +71,7 @@ const AddRecipes = () => {
 
         <button type="submit">Add Recipe</button>
       </form>
+    </div>
     </div>
   );
 };
