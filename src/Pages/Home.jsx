@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import RecipeCard from '../Components/RecipeCard';
-import '../App.css';
-import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const API = process.env.REACT_APP_API_URL;
@@ -13,21 +12,23 @@ function Home() {
     axios
       .get(`${API}/recipes`)
       .then((response) => setRecipes(response.data))
-      .catch((c) => console.warn("catch", c));
+      .catch((error) => console.warn("Error", error));
   }, []);
-console.log(recipes);
+
   return (
     <div className="home">
       <section className="recipe-cards">
         <h2>Featured Recipes</h2>
         <div className="card-container">
           {recipes.map((recipe) => (
-            <RecipeCard key={recipe.id} recipe={recipe} />
+            <Link to={`/recipes/${recipe.id}`} key={recipe.id} className="recipe-link">
+            <RecipeCard recipe={recipe} />
+          </Link>          
           ))}
         </div>
       </section>
     </div>
   );
-};
+}
 
 export default Home;

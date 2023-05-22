@@ -2,9 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100vh;
     background-color: yellow;
-    color: black;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: red;
     padding: 20px;
     box-sizing: border-box;
   }
