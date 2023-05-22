@@ -7,6 +7,7 @@ const RecipeCard = ({ recipe }) => {
     <div className="RecipeCard">
       <Link to={`/recipes/${recipe.id}`}>
         <img src={recipe.image_url} alt={recipe.title} className="RecipeCard__image" />
+        <h3 className="RecipeCard__title">{recipe.title}</h3>
       </Link>
     </div>
   );

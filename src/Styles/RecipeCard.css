@@ -20,3 +20,7 @@
   grid-gap: 20px;
   background-color: rgb(37, 15, 81);
 }
+
+.RecipeCard__title{
+  text-align: center;
+}

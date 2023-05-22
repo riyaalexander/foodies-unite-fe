@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Styles/Navbar.css'
+import '../Styles/Navbar.css';
 
 const Navbar = () => {
   const logoUrl =
@@ -9,6 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <img src={logoUrl} alt="Foodies Unite Logo" className="navbar-logo" />
+      <span className="navbar-text">Foodies Unite!</span>
       <ul className="navbar-links">
         <li>
           <Link to="/">Home</Link>
