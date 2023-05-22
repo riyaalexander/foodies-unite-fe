@@ -1,6 +1,5 @@
 import React from 'react';
 import RecipeCard from '../Components/RecipeCard';
-import Navbar from '../Components/Navbar';
 import '../App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -19,7 +18,6 @@ function Home() {
 console.log(recipes);
   return (
     <div className="home">
-      <Navbar /> {Navbar}
       <section className="recipe-cards">
         <h2>Featured Recipes</h2>
         <div className="card-container">
