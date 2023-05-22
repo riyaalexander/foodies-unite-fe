@@ -1,0 +1,29 @@
+.RecipeDetails {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(37, 15, 81);
+  }
+  
+  .RecipeDetails__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+  }
+  
+  .RecipeDetails__image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .RecipeDetails__info {
+    background-color: hotpink;
+    font-size: 18px;
+  }
+  
+  .RecipeDetails__info-item {
+    margin-bottom: 10px;
+    background-color: hotpink;
+  }
+  
