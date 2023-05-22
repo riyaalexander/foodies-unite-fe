@@ -21,7 +21,7 @@ const RecipeDetails = () => {
     };
 
     fetchRecipe();
-  }, [id]);
+  }, [id, API]);
 
   if (!recipe) {
     return <div>Loading...</div>;
