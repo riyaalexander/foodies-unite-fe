@@ -3,6 +3,7 @@ import axios from 'axios';
 import '../Styles/AddRecipes.css';
 
 // POST
+const API = process.env.REACT_APP_API_URL;
 const AddRecipes = () => {
   const [formData, setFormData] = useState({
     title: '',
@@ -22,7 +23,7 @@ const AddRecipes = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5500/recipes', formData);
+      const response = await axios.post(`${API}/`, formData);
       console.log(response.data);
       // Reset the form data
       setFormData({

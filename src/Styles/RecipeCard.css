@@ -2,13 +2,16 @@
   background-color: yellow;
   padding: 10px;
   margin-bottom: 20px;
+  margin-right: 10px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .RecipeCard__image {
-  width: 40%;
+  width: 50%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .card-container {
