@@ -69,3 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # foodies-unite-fe
+
+
+# Links
+Trello: https://trello.com/b/JqZaewLH/foodies-unite
+
+Back End Deployment: https://earnest-dolphin-6561a2.netlify.app
+Front End Deployment: https://foodies-unite-fe.netlify.app
