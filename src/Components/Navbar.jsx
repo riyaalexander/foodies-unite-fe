@@ -11,13 +11,13 @@ const Navbar = () => {
       <img src={logoUrl} alt="Foodies Unite Logo" className="navbar-logo" />
       <ul className="navbar-links">
         <li>
-          <Link to="src/Pages/Home.jsx">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="src/Pages/About.jsx">About</Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="src/Pages/AddRecipes.jsx">Add Recipes</Link>
+          <Link to="/add-recipes">Add Recipes</Link>
         </li>
       </ul>
     </nav>
