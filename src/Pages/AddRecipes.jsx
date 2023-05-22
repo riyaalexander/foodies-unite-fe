@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../Styles/AddRecipes.css';
 
+// POST
 const AddRecipes = () => {
   const [formData, setFormData] = useState({
     title: '',
@@ -21,6 +23,7 @@ const AddRecipes = () => {
 
     try {
       const response = await axios.post('http://localhost:5500/recipes', formData);
+      console.log('hello');
       console.log(response.data);
       // Reset the form data
       setFormData({
