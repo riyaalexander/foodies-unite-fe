@@ -5,7 +5,6 @@ import axios from 'axios';
 const EditRecipe = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [recipe, setRecipe] = useState({});
   const [formData, setFormData] = useState({
     title: '',
     image_url: '',
@@ -22,7 +21,6 @@ const EditRecipe = () => {
     const fetchRecipe = async () => {
       try {
         const response = await axios.get(`${API}/recipes/${id}`);
-        setRecipe(response.data);
         setFormData({
           title: response.data.title,
           image_url: response.data.image_url,
