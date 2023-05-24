@@ -12,7 +12,8 @@
   font-size: 50px;
   font-weight: bold;
   color: yellow;
-  text-align: center;
+  text-align: left;
+  margin-left: 5px;
 }
 
 .navbar-logo {
@@ -22,11 +23,42 @@
 
 .navbar-links {
   list-style: none;
-  text-decoration: none;
   color: black;
-  background-color: yellow;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   display: flex;
   gap: 30px;
+  font-family: fantasy;
+  font-style: oblique;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-link span {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 25px;
+}
+
+
+.navbar-link.home-link {
+  background-image: url('https://pics.clipartpng.com/midle/Mango_PNG_Clip_Art-2411.png');
+}
+
+.navbar-link.about-link {
+  background-image: url('https://pics.clipartpng.com/midle/Mango_PNG_Clip_Art-2411.png');
+}
+
+.navbar-link.add-recipes-link {
+  background-image: url('https://pics.clipartpng.com/midle/Mango_PNG_Clip_Art-2411.png');
 }

@@ -24,3 +24,10 @@
 .RecipeCard__title{
   text-align: center;
 }
+
+.recipe-cards{
+  background-color: rgb(37, 15, 81);
+  color: orange;
+  text-align: center;
+  display: block;
+}
